@@ -1,7 +1,8 @@
-const URL = "https://portfolio-hkp4.onrender.com"
+
+const URL = "http://mydeployedurl.hostserver.whatever"
 
 export const projectsLoader = async () => {
-    const response = await fetch(URL + "./projects")
+    const response = await fetch(URL + "/projects")
     const projects = await response.json()
     return projects
 }
