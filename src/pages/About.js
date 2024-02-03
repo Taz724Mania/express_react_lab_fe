@@ -1,6 +1,9 @@
 import { useLoaderData } from "react-router-dom";
 
-const About = () => {
+const About = (props) => {
+
+    const about = useLoaderData()
+    
     return (
         <div>
             <h2>{about.name}</h2>
